@@ -52,7 +52,7 @@ body {
   body.layout-white {
     background-color: #fff; }
     body.layout-white .page-wrap {
-      padding: 0px;
+      padding: 10px;
       border: none;
       margin: 0px auto; }
 
@@ -2446,3 +2446,315 @@ body.show-menu-fixed .menu-fixed {
     padding: 10px 5px;
     font-size: 15px; }
 
+
+
+    /* widgets */
+    /***************** Widget Latest and Popular Projects ******************/
+.widget_custom_popular_projects_entries,
+.widget_custom_latest_projects_entries {
+  position: relative;
+}
+.widget_custom_popular_projects_entries .widgettitle,
+.widget_custom_latest_projects_entries .widgettitle {
+  padding: 0 70px 0 0;
+}
+.widget_custom_popular_projects_entries .widget_custom_projects_entries_slides,
+.widget_custom_latest_projects_entries .widget_custom_projects_entries_slides {
+  padding: 40px 0 0;
+}
+.widget_custom_popular_projects_entries .widgettitle + .widget_custom_projects_entries_slides,
+.widget_custom_latest_projects_entries .widgettitle + .widget_custom_projects_entries_slides {
+  padding: 0;
+}
+.widget_custom_popular_projects_entries .cmsmasters_slider_project,
+.widget_custom_latest_projects_entries .cmsmasters_slider_project {
+  padding: 0 1px 2px;
+}
+.widget_custom_popular_projects_entries .cmsmasters_slider_project .cmsmasters_slider_project_title > a,
+.widget_custom_latest_projects_entries .cmsmasters_slider_project .cmsmasters_slider_project_title > a {
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+}
+.widget_custom_popular_projects_entries .owl-buttons,
+.widget_custom_latest_projects_entries .owl-buttons {
+  position: relative;
+  width: 41px;
+  height: 30px;
+  margin: 0 auto;
+  position: absolute;
+  top: -44px;
+  right: 0;
+  left: auto;
+}
+.widget_custom_popular_projects_entries .owl-buttons:before,
+.widget_custom_latest_projects_entries .owl-buttons:before {
+  content: '';
+  width: 1px;
+  height: 12px;
+  margin: auto !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.widget_custom_popular_projects_entries .owl-buttons > div,
+.widget_custom_latest_projects_entries .owl-buttons > div {
+  top: auto;
+  margin: 0;
+}
+.widget_custom_popular_projects_entries .owl-buttons > div.owl-prev,
+.widget_custom_latest_projects_entries .owl-buttons > div.owl-prev {
+  left: 0;
+  right: auto;
+}
+.widget_custom_popular_projects_entries .owl-buttons > div.owl-next,
+.widget_custom_latest_projects_entries .owl-buttons > div.owl-next {
+  left: auto;
+  right: 0;
+}
+.widget_custom_popular_projects_entries .owl-buttons > div > span,
+.widget_custom_latest_projects_entries .owl-buttons > div > span {
+  width: 20px;
+  height: 30px;
+}
+.widget_custom_popular_projects_entries .cmsmasters_slider_project_outer img,
+.widget_custom_latest_projects_entries .cmsmasters_slider_project_outer img {
+  image-rendering: inherit;
+}
+.widget.widget_custom_popular_projects_entries,
+.widget.widget_custom_latest_projects_entries {
+  padding-top: 20px;
+}
+.cmsmasters_widget_divider + .widget.widget_custom_popular_projects_entries,
+.cmsmasters_widget_divider + .widget.widget_custom_latest_projects_entries {
+  padding-top: 0;
+}
+/***************** Widget Posts Tabs ******************/
+.widget_custom_posts_tabs_entries {
+  position: relative;
+  overflow: hidden;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs {
+  position: relative;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tabs_list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tabs_list_item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  float: none;
+  width: 100%;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tabs_list_item a {
+  padding: 12px 5px;
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tabs_wrap {
+  margin: 20px 0 0;
+  padding: 0 0 20px;
+  position: relative;
+  overflow: hidden;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tabs_wrap > .cmsmasters_tab:first-child {
+  display: block;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab ul {
+  margin: 0;
+  padding: 0;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab li {
+  margin: 10px 0 0;
+  padding: 0;
+  position: relative;
+  min-height: 70px;
+  overflow: hidden;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab li:first-child {
+  margin: 0;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab li:before {
+  content: none;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab li p {
+  margin: 0;
+  padding: 0;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab.tab_latest li:after,
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab.tab_popular li:after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  height: 60px;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_tab.tab_comments li > p {
+  margin: 0;
+  padding: 10px 0 0;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_lpr_tabs_img {
+  margin-right: 20px;
+  z-index: 1;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  margin: auto !important;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_lpr_tabs_cont {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0 0 86px;
+  position: relative;
+  overflow: hidden;
+}
+.widget_custom_posts_tabs_entries .cmsmasters_tabs .cmsmasters_lpr_tabs_cont > .published {
+  margin-top: 0;
+  display: block;
+}
+.widget_custom_posts_tabs_entries .img_placeholder_small {
+  width: 70px;
+  height: 70px;
+}
+/***************** Widget RSS ******************/
+.widget_rss img {
+  margin: -3px 0 0;
+}
+.widget_rss .rsswidget + .rsswidget {
+  margin: 0 0 0 10px;
+}
+.widget_rss ul {
+  margin: 0;
+  padding: 0;
+}
+.widget_rss ul li {
+  margin: 0;
+  padding: 20px 0 0;
+}
+.widget_rss ul li:first-child {
+  padding: 0;
+}
+.widget_rss ul li:before {
+  content: none;
+}
+.widget_rss ul li .rss-date {
+  display: block;
+  margin: 8px 0 0;
+}
+.widget_rss ul li .rssSummary {
+  padding: 15px 0 0;
+  overflow: hidden;
+}
+.widget_rss ul li cite {
+  display: block;
+  padding: 7px 0 0;
+}
+/***************** Widget Tag Cloud ******************/
+.widget_tag_cloud {
+  position: relative;
+  overflow: hidden;
+}
+.widget_tag_cloud a {
+  line-height: 1.3em;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+.widget_tag_cloud a:last-child {
+  margin: 0;
+}
+.widget_tag_cloud .tagcloud {
+  padding: 0 5px;
+}
+/***************** Widget Twitter ******************/
+.widget_custom_twitter_entries {
+  position: relative;
+  overflow: hidden;
+}
+.widget_custom_twitter_entries ul {
+  margin: 0;
+  padding: 0;
+}
+.widget_custom_twitter_entries ul li {
+  margin: 0 0 24px;
+  padding: 0;
+  position: relative;
+}
+.widget_custom_twitter_entries ul li:last-child {
+  margin: 0;
+}
+.widget_custom_twitter_entries ul li:before {
+  content: none;
+}
+.widget_custom_twitter_entries .tweet_time {
+  display: block;
+  padding: 0 0 0 35px;
+  position: relative;
+}
+.widget_custom_twitter_entries .tweet_time:before {
+  font-size: 20px;
+  line-height: 20px;
+  width: 1em;
+  height: 1em;
+  margin: auto !important;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: 0;
+  bottom: 0;
+}
+.widget_custom_twitter_entries .tweet_text {
+  display: block;
+  padding: 14px 0 0;
+  overflow: hidden;
+}
+/***************** Widget Most Popular Posts ******************/
+.widget_custom_most_popular_posts_entries {
+  position: relative;
+  overflow: hidden;
+}
+.widget_custom_most_popular_posts_entries ul {
+  margin: 0;
+  padding: 0;
+}
+.widget_custom_most_popular_posts_entries ul li {
+  margin: 0 0 26px;
+  padding: 0 0 0 56px;
+  position: relative;
+  display: block;
+  clear: both;
+}
+.widget_custom_most_popular_posts_entries ul li:last-child {
+  margin: 0;
+}
+.widget_custom_most_popular_posts_entries ul li:before {
+  content: none;
+}
+.widget_custom_most_popular_posts_entries ul li span {
+  line-height: 22px;
+  width: 22px;
+  height: 22px;
+  margin: auto !important;
+  position: absolute;
+  left: 5px;
+  right: auto;
+  top: 0;
+  bottom: 0;
+}
+.widget_custom_most_popular_posts_entries ul li a {
+  position: relative;
+  overflow: hidden;
+}

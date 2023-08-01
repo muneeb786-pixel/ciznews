@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from www.cizthemes.com/template/ciznews/home_white_pinterest.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jul 2023 17:29:02 GMT -->
+<!-- Mirrored from www.cizthemes.com/template/ciznews/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jul 2023 17:28:41 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <meta name="author" content="congnd91">
     <title>CIZ NEWS - Magazine, Blog & News HTML5 Template</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.html">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.html">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
@@ -25,6 +25,8 @@
     <link href="css/normalize.min.css" rel="stylesheet" />
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2.css">
+
     <!-- Main CSS (SCSS Compile) -->
     <link href="css/main.css" rel="stylesheet" />
     <!-- JavaScripts -->
@@ -36,7 +38,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="layout-white">
+<body>
     <!--preload-->
     <div class="loader" id="page-loader">
         <div class="loading-wrapper">
@@ -128,7 +130,7 @@
                 <div class="row">
                     <a href="index.html" class="logo">
                         <div>
-                            <img alt="" src="images/logo.html" />
+                            <img alt="" src="images/logo.png" />
                         </div>
                         <span class="type">wednesday march 08 2017</span>
                     </a>
@@ -224,316 +226,592 @@
             <div class="searchbox">
                 <input type="text" placeholder="Search here..." />
             </div>
+            <!--big-article-->
+            <article class="big-article">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="ciz-thumb">
+                            <a href="single_one_column.html">
+                                <img alt="" src="images/p3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="big-article-bar">
+                            <div class="post-meta">
+                                <span class="post-category">
+                                    <a href="category_three.html"> PHOTOGRAPHY</a>
+                                </span>
+                                <em>/</em>
+                                <span class="post-date">
+                                    Mar 01, 2017
+                                </span>
+                            </div>
+                            <div class="share-posts">
+                                <span>
+                                    Share
+                                </span>
+
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <h1>
+                            <a href="single_one_column.html">
+                                Nec vero pietas adversus deos nec quanta iis gratia debeatur sine explicatione naturae intellegi potest.
+                            </a>
+                        </h1>
+                        <p>The label has seen the release of some of the punk scene’s greatest records from bands like Lagwagon, Screeching Weasel, Anti-Flag, Masked Intruder and NOFX themselves. Mike is known for his crassness and utter lack of giving-a-s— when it comes...</p>
+                        <a href="single_one_column.html" class="readmore">READ MORE</a>
+                    </div>
+                </div>
+            </article>
+            <!--recent posts-->
+            <div class="box-caption">
+                <h2><span> RECENT POSTS</span></h2>
+            </div>
+            <!--three recent posts-->
+            <div class="three-articles">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12">
+                        <article class="three-item">
+                            <div class="ciz-thumb">
+                                <a href="single.html"><img alt="" src="images/p2.jpg" /></a>
+                            </div>
+                            <div class="post-meta">
+                                <span class="post-category">
+                                    <a href="category_three.html"> PHOTOGRAPHY</a>
+                                </span>
+                                <em>/</em>
+                                <span class="post-date">
+                                    Mar 02, 2017
+                                </span>
+                            </div>
+                            <h4><a href="single.html">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</a></h4>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <article class="three-item">
+                            <div class="ciz-thumb">
+                                <a href="single.html"><img alt="" src="images/w1.html" /></a>
+                            </div>
+                            <div class="post-meta">
+                                <span class="post-category">
+                                    <a href="category_two.html">WORLD</a>
+                                </span>
+                                <em>/</em>
+                                <span class="post-date">
+                                    Mar 02, 2017
+                                </span>
+                            </div>
+                            <h4><a href="single.html"> Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</a></h4>
+                        </article>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                        <article class="three-item">
+                            <div class="ciz-thumb">
+                                <a href="single.html"><img alt="" src="images/l1.html" /></a>
+                            </div>
+                            <div class="post-meta">
+                                <span class="post-category">
+                                    <a href="category_one.html"> LIFESTYLE</a>
+                                </span>
+                                <em>/</em>
+                                <span class="post-date">
+                                    Mar 01, 2017
+                                </span>
+                            </div>
+                            <h4><a href="single.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h4>
+                        </article>
+                    </div>
+                </div>
+            </div>
             <!--cols-->
-            <div class="cols cols-full">
+            <div class="cols">
                 <!--colleft-->
-                <div class="grid">
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/9.html" />
-                                </a>
+                <div class="colleft">
+                    <!--post item-->
+                    <article class="ciz-post">
+                        <div class="post-meta">
+                            <span class="post-category">
+                                <a href="category_two.html">WORLD  </a>
+                            </span>
+                            <em>/</em>
+                            <span class="post-date">
+                                Mar 01, 2017
+                            </span>
+                            <div class="share-posts">
+                                <span>
+                                    Share
+                                </span>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                             </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_one.html">Life style</a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
+                        </div>
+                        <h2>
+                            <a href="single.html"> Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada.</a>
+                        </h2>
+                        <div class="ciz-thumb">
+                            <a href="single.html">
+                                <img alt="" src="images/w7.html" />
+                            </a>
+                        </div>
+                        <div class="post-content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                                but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+                            </p>
+                        </div>
+                        <a href="single.html" class="post-readmore">Read more</a>
+                        <div class="box-caption box-caption-small">
+                            <h2><span> in category</span></h2>
+                        </div>
+                        <div class="three-articles">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/w2.html" /></a>
+                                        </div>
 
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                        <h5><a href="single.html">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</a></h5>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/w4.html" /></a>
+                                        </div>
+                                        <h5><a href="single.html"> Curabitur non nulla sit amet nisl tempus </a></h5>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/w5.html" /></a>
+                                        </div>
+                                        <h5><a href="single.html">The ups, downs and future of Tomonobu Itagaki's</a></h5>
+                                    </article>
                                 </div>
                             </div>
-                            <h2>
-                                <a href="single_center_white.html"> Proin eget tortor risus.</a>
-                            </h2>
-                            <div class="post-content">
-                                <p>
-                                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-
-                        </article>
-                    </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/6.html" />
-                                </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_three.html">Photography</a>
+                        </div>
+                    </article>
+                    <!--post item-->
+                    <article class="ciz-post">
+                        <div class="post-meta">
+                            <span class="post-category">
+                                <a href="category_three.html">PHOTOGRAPHY  </a>
+                            </span>
+                            <em>/</em>
+                            <span class="post-date">
+                                Mar 01, 2017
+                            </span>
+                            <div class="share-posts">
+                                <span>
+                                    Share
                                 </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
 
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <h2>
+                            <a href="single.html">Gallery Posts - Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit.</a>
+
+                        </h2>
+                        <div class="owl-carousel owl-gallery-posts">
+                            <div>
+                                <img alt="" src="images/p4.jpg" />
+                            </div>
+                            <div>
+                                <img alt="" src="images/p5.jpg" />
+                            </div>
+                            <div>
+                                <img alt="" src="images/p2.jpg" />
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>
+                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+                            </p>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised Words which don't look even slightly believable. </p>
+                            <h3>    Awesome Gallery</h3>
+                            <p>
+                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                            </p>
+                        </div>
+                        <a href="single.html" class="post-readmore">Read more</a>
+                        <div class="box-caption box-caption-small">
+                            <h2><span> in category</span></h2>
+                        </div>
+                        <div class="three-articles">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/p1.html" /></a>
+                                        </div>
+                                        <h5><a href="single.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h5>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/p3.html" /></a>
+                                        </div>
+                                        <h5><a href="single.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h5>
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/p1.html" /></a>
+                                        </div>
+
+                                        <h5><a href="single.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h5>
+
+                                    </article>
                                 </div>
                             </div>
-                            <h2>
-                                <a href="single_center_white.html">Cras ultricies ligula sed magna dictum porta.</a>
-                            </h2>
-                            <div class="post-content">
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-
-                        </article>
-                    </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/11.html" />
-                                </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_three.html">Photography</a>
+                        </div>
+                    </article>
+                    <!--post item-->
+                    <article class="ciz-post">
+                        <div class="post-meta">
+                            <span class="post-category">
+                                <a href="category_three.html">LIFESTYLE  </a>
+                            </span>
+                            <em>/</em>
+                            <span class="post-date">
+                                Mar 01, 2017
+                            </span>
+                            <div class="share-posts">
+                                <span>
+                                    Share
                                 </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
 
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <h2>
+                            <a href="#">Our creative process</a>
+                        </h2>
+                        <div class='embed-container'><iframe src='https://player.vimeo.com/video/8362481' allowFullScreen></iframe></div>
+                        <div class="post-content">
+                            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+                        </div>
+                        <a href="single.html" class="post-readmore">Read more</a>
+                        <div class="box-caption box-caption-small">
+                            <h2><span> in category</span></h2>
+                        </div>
+                        <div class="three-articles">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/l2.html" /></a>
+                                        </div>
+
+                                        <h5><a href="single.html">Nulla quis lorem ut libero malesuada feugiat.</a></h5>
+
+                                    </article>
+
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/l4.html" /></a>
+                                        </div>
+
+                                        <h5><a href="single.html">Cras ultricies ligula sed magna dictum porta.</a></h5>
+
+                                    </article>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <article class="three-item">
+                                        <div class="ciz-thumb">
+                                            <a href="single.html"><img alt="" src="images/l1.html" /></a>
+                                        </div>
+                                        <h5><a href="single.html">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</a></h5>
+
+                                    </article>
                                 </div>
                             </div>
-                            <h2>
-                                <a href="single_center_white.html">Donec sollicitudin molestie malesuada.</a>
-                            </h2>
-                            <div class="post-content">
-                                <p>
-                                    Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-                        </article>
-                    </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/w1.html" />
-                                </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_two.html">WORLD  </a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
-
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html"> Cras ultricies ligula sed magna dictum porta.</a>
-                            </h2>
-
-                            <div class="post-content">
-                                <p>
-                                    Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                </p>
-                            </div>
-                            <a href="single_center.html" class="post-readmore">Read more</a>
-                        </article>
-                    </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/l1.html" />
+                        </div>
+                    </article>
+                   
+                </div>
+                <!--colright-->
+                <div class="colright">
+                    <!-- dailies-->
+                    <div class="dailies">
+                        <div class="widget-title widget-title-white ">
+                            <span>
+                                DAILIES
+                            </span>
+                        </div>
+                        <div class="dailies-content">
+                            <div class="owl-carousel owl-dailies">
+                                <div>
+                                    <a href="single_center.html">
+                                        <div class="ciz-thumb">
+                                            <img alt="" src="images/w3.html" />
+                                        </div>
                                     </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_one.html">LIFE STYLE</a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
-
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                    <h3>
+                                        <a href="single_center.html">Satisne vobis videor pro meo iure in vestris auribus commentatus</a>
+                                    </h3>
                                 </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html"> Satisne vobis videor pro meo iure in vestris auribus commentatus</a>
-                            </h2>
+                                <div>
+                                    <a href="single_center.html">
+                                        <div class="ciz-thumb">
+                                            <img alt="" src="images/w2.html" />
+                                        </div>
+                                    </a>
+                                    <h3>
+                                        <a href="single_center.html">Nulla quis lorem ut libero malesuada feugiat.</a>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <a href="single_center.html">
+                                        <div class="ciz-thumb">
+                                            <img alt="" src="images/p1.html" />
+                                        </div>
+                                    </a>
+                                    <h3>
+                                        <a href="single_center.html">The ups, downs and future of Tomonobu Itagaki's</a>
+                                    </h3>
+                                </div>
+                                <div>
+                                    <a href="single_center.html">
+                                        <div class="ciz-thumb">
+                                            <img alt="" src="images/w9.html" />
+                                        </div>
+                                    </a>
+                                    <h3>
+                                        <a href="single_center.html">Donec sollicitudin molestie malesuada.d</a>
+                                    </h3>
+                                </div>
 
-                            <div class="post-content">
-                                <p>
-                                    Red porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                </p>
+
                             </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-                        </article>
+                        </div>
                     </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
+                    <!-- popular posts-->
+                    <div class="popular-box">
+                        <div class="widget-title">
+                            <span>
+                                POPULAR POSTS
+                            </span>
+                        </div>
+                        <div class="list-popular">
+                            <article class="popular-item">
                                 <div class="ciz-thumb">
-                                    <a href="single_center_white.html">
-
-                                        <img alt="" src="images/w2.html" />
+                                    <a href="single_center.html">
+                                        <img alt="" src="images/w1.html">
                                     </a>
-                            </div>
-
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_two.html">World</a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
-
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                 </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html">Donec sollicitudin molestie malesuada.d</a>
-                            </h2>
-                            <div class="post-content">
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                                    but also the leap into electronic typesetting, remaining essentially unchanged.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_two.html">WORLD</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Feb 10, 2015
+                                    </span>
+                                </div>
+                                <h5><a href="single_center.html">Cras ultricies ligula sed magna dictum porta.</a></h5>
 
-                        </article>
+                            </article>
+                            <article class="popular-item">
+                                <div class="ciz-thumb">
+                                    <a href="single_center.html">
+                                        <img alt="" src="images/l1.html">
+                                    </a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_one.html">LIFE STYLE</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Feb 10, 2015
+                                    </span>
+                                </div>
+                                <h5><a href="single_center.html">Nulla quis lorem ut libero malesuada feugiat.</a></h5>
+
+                            </article>
+                            <article class="popular-item">
+                                <div class="ciz-thumb">
+                                    <a href="single_center.html">
+                                        <img alt="" src="images/p3.html">
+                                    </a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_three.html">PHOTOGRAPHY </a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Feb 10, 2015
+                                    </span>
+                                </div>
+                                <h5><a href="single_center.html">Donec sollicitudin molestie malesuada.d</a></h5>
+
+                            </article>
+                            <article class="popular-item">
+                                <div class="ciz-thumb">
+                                    <a href="single_center.html">
+                                        <img alt="" src="images/p2.html">
+                                    </a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_three.html">PHOTOGRAPHY</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Feb 10, 2015
+                                    </span>
+                                </div>
+                                <h5><a href="single_center.html">The ups, downs and future of Tomonobu Itagaki's</a></h5>
+
+                            </article>
+                            <article class="popular-item">
+                                <div class="ciz-thumb">
+                                    <a href="single_center.html">
+                                        <img alt="" src="images/w7.html">
+                                    </a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_two.html">WORLD</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Feb 10, 2015
+                                    </span>
+                                </div>
+                                <h5><a href="single_center.html">Pellentesque in ipsum id orci porta dapibus.</a></h5>
+
+                            </article>
+                        </div>
                     </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
+                    <!-- connect us-->
+                    <div class="connect-us">
+                        <div class="widget-title">
+                            <span>
+                                CONNECT & FOLLOW
+                            </span>
+                        </div>
+                        <ul class="list-social-icon">
+                            <li>
+                                <a href="#" class="facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="google">
+                                    <i class="fa fa-google"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="youtube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="pinterest">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- subcribe box-->
+                    <div class="subcribe-box">
+                        <h3>NEWSLETTER</h3>
+                        <p>Enter your email address below to subscribe to my newsletter</p>
+                        <input type="text" placeholder="Your email address..." />
+                        <button class="my-btn">Subscribe</button>
+                    </div>
+                    <!-- trend post-->
+                    <div class="trend-box trend-box-affix" data-spy="affix">
+                        <div class="widget-title">
+                            <span>
+                                TREND
+                            </span>
+                        </div>
+                        <article class="trend-one">
+                            <span class="number">01</span>
                             <div class="ciz-thumb">
                                 <a href="single_center_white.html">
-                                    <img alt="" src="images/13.html" />
+                                    <img alt="" src="images/w2.html">
                                 </a>
                             </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_one.html">life style</a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
 
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html"> Window alone</a>
-                            </h2>
-                            <div class="post-content">
-                                <p>
-                                    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            <h5><a href="single_center_white.html">Donec sollicitudin molestie malesuada.d</a></h5>
 
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
                         </article>
-                    </div>
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/p3.html" />
-                                </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_three.html">PHOTOGRAPHY</a>
-                                </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html"> Pellentesque in ipsum id orci porta dapibus.</a>
-                            </h2>
+                        <ul class="list-trend">
 
-                            <div class="post-content">
-                                <p>
-                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.   pretium ut lacinia in, elementum id enim.  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-                        </article>
-                    </div>
+                            <li class="trend-item">
+                                <span class="number">
+                                    <img alt="" src="images/l1.html" />
+                                    02
+                                </span>
 
-                    <div class="grid-item">
-                        <article class="post-item-isotop">
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
+
+                                <h5><a href="single_center_white.html">Nulla quis lorem ut libero malesuada feugiat.</a></h5>
+
+                            </li>
+                            <li class="trend-item">
+
+                                <span class="number">
+                                    <img alt="" src="images/w8.html" />
+                                    03
+                                </span>
+                                <h5><a href="single_center_white.html">Cras ultricies ligula sed magna dictum porta.</a></h5>
+
+                            </li>
+                            <li class="trend-item">
+
+                                <span class="number">
                                     <img alt="" src="images/p4.html" />
-                                </a>
-                            </div>
-                            <div class="post-meta">
-                                <span class="post-category">
-                                    <a href="category_three.html">PHOTOGRAPHY</a>
+                                    04
                                 </span>
-                                <em>/</em>
-                                <span class="post-date">
-                                    Mar 01, 2017
-                                </span>
-                                <div class="share-posts">
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                            <h2>
-                                <a href="single_center_white.html"> The ups, downs and future of Tomonobu Itagaki's</a>
-                            </h2>
+                                <h5>
+                                    <a href="single_center_white.html">
+                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                    </a>
+                                </h5>
 
-                            <div class="post-content">
-                                <p>
-                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                </p>
-                            </div>
-                            <a href="single_center_white.html" class="post-readmore">Read more</a>
-                        </article>
+                            </li>
+                            <li class="trend-item">
+
+                                <span class="number">
+                                    <img alt="" src="images/p3.html" />
+                                    05
+                                </span>
+                                <h5><a href="single_center_white.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h5>
+
+                            </li>
+
+                        </ul>
                     </div>
-
+                    <!-- advertisement-->
+                    <div class="ads hidden-sm hidden-xs hidden ">
+                        <p>advertisement</p>
+                        <img alt="" src="images/ads.html" class="img-responsive" />
+                    </div>
                 </div>
-
-                <div class="loadmore">
-                    <a href="#" class="my-btn my-btn-dark">Load more...</a>
-                </div>
-
+                <div class="clearfix"></div>
             </div>
             <!--footer-->
             <footer class="footer">
@@ -646,9 +924,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
-<!-- Mirrored from www.cizthemes.com/template/ciznews/home_white_pinterest.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jul 2023 17:29:04 GMT -->
+<!-- Mirrored from www.cizthemes.com/template/ciznews/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jul 2023 17:28:59 GMT -->
 </html>

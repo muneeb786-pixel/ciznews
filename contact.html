@@ -10,7 +10,7 @@
     <meta name="author" content="congnd91">
     <title>CIZ NEWS - Magazine, Blog & News HTML5 Template</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.html">
+    <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.html">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
@@ -25,6 +25,8 @@
     <link href="css/normalize.min.css" rel="stylesheet" />
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Main CSS (SCSS Compile) -->
     <link href="css/main.css" rel="stylesheet" />
     <!-- JavaScripts -->
@@ -37,6 +39,21 @@
     <![endif]-->
 </head>
 <body>
+    <div class="container align-items-center justify-content-sm-center justify-content-md-end" style="
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+">
+            <h4><a href="login.html" class=""  style="color:white;">Login</a></h4>
+            <h4><a href="signup.html"  style="color:white;">Signup </a></h4>
+            <select name="" class="js-example-basic-single" style="width:100px;">
+                <option value="#">English <img src="images/flags/english.svg" alt=""></option>
+                <option value="#">Turkish</option>
+            </select>
+    </div>
     <!--preload-->
     <div class="loader" id="page-loader">
         <div class="loading-wrapper">
@@ -47,9 +64,9 @@
     <nav class="menu-res hidden-lg hidden-md ">
         <div class="menu-res-inner">
             <ul>
-                <li class="menu-item-has-children">
+                <li >
                     <a href="index.html"> Home </a>
-                    <ul class="sub-menu">
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="index.html">Default Style</a>
                         </li>
@@ -60,18 +77,18 @@
                             <a href="home_white_pinterest.html">White & Pinterest Style </a>
                         </li>
                         <li>
-                            <a href="home_menu_fixed.html">Navigation Fixed Style  </a>
+                            <a href="home_menu_fixed.html">Navigation Fixed Style </a>
                         </li>
                         <li>
-                            <a href="home_custom_font.html">Custom Font Style  </a>
+                            <a href="home_custom_font.html">Custom Font Style </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li class="menu-item-has-children">
+                <li >
                     <a href="category_one.html">
                         Category
                     </a>
-                    <ul class="sub-menu">
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="category_one.html">Category I</a>
                         </li>
@@ -81,11 +98,11 @@
                         <li>
                             <a href="category_three.html">Category III </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li class="menu-item-has-children">
-                    <a href="single_one_column.html">Single<span></span></a>
-                    <ul class="sub-menu">
+                <li >
+                    <a href="single.html">Single<span></span></a>
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="single.html">Single Default</a>
                         </li>
@@ -98,20 +115,20 @@
                         <li>
                             <a href="single_center_white.html">Single Center White Style</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="gallery.html">Pages<span></span></a>
+                    <a href="#">Pages<span></span></a>
                     <ul class="sub-menu">
                         <li>
                             <a href="404.html">Page 404</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="gallery.html">Page Gallery</a>
                         </li>
                         <li>
                             <a href="single_review.html"> Review Panel</a>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </li>
@@ -128,7 +145,7 @@
                 <div class="row">
                     <a href="index.html" class="logo">
                         <div>
-                            <img alt="" src="images/logo.html" />
+                            <img alt="" src="images/logo.png" />
                         </div>
                         <span class="type">wednesday march 08 2017</span>
                     </a>
@@ -143,7 +160,7 @@
                 <ul class="hidden-sm hidden-xs">
                     <li class="menu-item-has-children">
                         <a href="index.html"><i class="fa fa-home"></i> Home </a>
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                             <li>
                                 <a href="index.html">Default Style</a>
                             </li>
@@ -154,57 +171,28 @@
                                 <a href="home_white_pinterest.html">White & Pinterest Style </a>
                             </li>
                             <li>
-                                <a href="home_menu_fixed.html">Navigation Fixed Style  </a>
+                                <a href="home_menu_fixed.html">Navigation Fixed Style </a>
                             </li>
                             <li>
-                                <a href="home_custom_font.html">Custom Font Style  </a>
+                                <a href="home_custom_font.html">Custom Font Style </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <a href="category_one.html">
                             Category
                         </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="category_one.html">Category I</a>
-                            </li>
-                            <li>
-                                <a href="category_two.html">Category II </a>
-                            </li>
-                            <li>
-                                <a href="category_three.html">Category III </a>
-                            </li>
-                        </ul>
+                     
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="single_one_column.html">Single<span></span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="single.html">Single Default</a>
-                            </li>
-                            <li>
-                                <a href="single_one_column.html">Single One Column</a>
-                            </li>
-                            <li>
-                                <a href="single_center.html">Single Center Content</a>
-                            </li>
-                            <li>
-                                <a href="single_center_white.html">Single Center White Style</a>
-                            </li>
-                        </ul>
+                        <a href="single.html">Single<span></span></a>
+
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="gallery.html">Pages<span></span></a>
+                        <a href="#">Pages<span></span></a>
                         <ul class="sub-menu">
                             <li>
                                 <a href="404.html">Page 404</a>
-                            </li>
-                            <li>
-                                <a href="gallery.html">Page Gallery</a>
-                            </li>
-                            <li>
-                                <a href="single_review.html"> Review Panel</a>
                             </li>
                         </ul>
                     </li>
@@ -291,7 +279,7 @@
                     <div class="footer-col footer-col-left">
                         <div class="about">
                             <a href="index.html" class="logo">
-                                <img alt="" src="images/logo.html" />
+                                <img alt="" src="images/logo-bottom-sidebar.png" />
                             </a>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                             <ul class="list-social-icon-footer">
@@ -342,32 +330,32 @@
                         <ul class="instagram-pics">
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i1.html" />
+                                    <img alt="" src="images/i1.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i2.html" />
+                                    <img alt="" src="images/i2.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i3.html" />
+                                    <img alt="" src="images/i3.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i4.html" />
+                                    <img alt="" src="images/i4.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i5.html" />
+                                    <img alt="" src="images/i5.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i6.html" />
+                                    <img alt="" src="images/i6.jpg" />
                                 </a>
                             </li>
                             <li class="clearfix"></li>
@@ -381,7 +369,7 @@
                     <span class="totop">
                         To <br /> top
                     </span>
-                    <p> © 2017 <a href="#">CIZ NEWS</a>. All rights reserved.</p>
+                    <p> © 2023 <a href="#">Bitbuilteni</a>. All rights reserved.</p>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -417,6 +405,14 @@
                 title: 'Brooklyn, NY 11213, USA!'
             });
         }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
     </script>
 </body>
 

@@ -10,7 +10,7 @@
     <meta name="author" content="congnd91">
     <title>CIZ NEWS - Magazine, Blog & News HTML5 Template</title>
     <!-- Favicons -->
-    <link rel="shortcut icon" href="images/favicon.html">
+    <link rel="shortcut icon" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.html">
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.html">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.html">
@@ -22,9 +22,12 @@
     <!-- Vender -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/normalize.min.css" rel="stylesheet" />
     <link href="css/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/select2.css">
+
     <!-- Main CSS (SCSS Compile) -->
     <link href="css/main.css" rel="stylesheet" />
     <!-- JavaScripts -->
@@ -36,20 +39,36 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body >
+    <div class="container align-items-center justify-content-sm-center justify-content-md-end" style="
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+">
+            <h4><a href="login.html" class=""  style="color:white;">Login</a></h4>
+            <h4><a href="signup.html"  style="color:white;">Signup </a></h4>
+            <select name="" class="js-example-basic-single" style="width:100px;">
+                <option value="#">English <img src="images/flags/english.svg" alt=""></option>
+                <option value="#">Turkish</option>
+            </select>
+    </div>
     <!--preload-->
     <div class="loader" id="page-loader">
         <div class="loading-wrapper">
             <p>Loading<span>.</span><span>.</span><span>.</span></p>
         </div>
     </div>
-    <!--menu mobile-->
+
+     <!--menu mobile-->
     <nav class="menu-res hidden-lg hidden-md ">
         <div class="menu-res-inner">
             <ul>
-                <li class="menu-item-has-children">
+                <li >
                     <a href="index.html"> Home </a>
-                    <ul class="sub-menu">
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="index.html">Default Style</a>
                         </li>
@@ -60,18 +79,18 @@
                             <a href="home_white_pinterest.html">White & Pinterest Style </a>
                         </li>
                         <li>
-                            <a href="home_menu_fixed.html">Navigation Fixed Style  </a>
+                            <a href="home_menu_fixed.html">Navigation Fixed Style </a>
                         </li>
                         <li>
-                            <a href="home_custom_font.html">Custom Font Style  </a>
+                            <a href="home_custom_font.html">Custom Font Style </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li class="menu-item-has-children">
+                <li >
                     <a href="category_one.html">
                         Category
                     </a>
-                    <ul class="sub-menu">
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="category_one.html">Category I</a>
                         </li>
@@ -81,11 +100,11 @@
                         <li>
                             <a href="category_three.html">Category III </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
-                <li class="menu-item-has-children">
-                    <a href="single_one_column.html">Single<span></span></a>
-                    <ul class="sub-menu">
+                <li >
+                    <a href="single.html">Single<span></span></a>
+                    <!-- <ul class="sub-menu">
                         <li>
                             <a href="single.html">Single Default</a>
                         </li>
@@ -98,7 +117,7 @@
                         <li>
                             <a href="single_center_white.html">Single Center White Style</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </li>
                 <li class="menu-item-has-children">
                     <a href="gallery.html">Pages<span></span></a>
@@ -106,12 +125,12 @@
                         <li>
                             <a href="404.html">Page 404</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="gallery.html">Page Gallery</a>
                         </li>
                         <li>
                             <a href="single_review.html"> Review Panel</a>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </li>
@@ -128,7 +147,7 @@
                 <div class="row">
                     <a href="index.html" class="logo">
                         <div>
-                            <img alt="" src="images/logo.html" />
+                            <img alt="" src="images/logo.png" />
                         </div>
                         <span class="type">wednesday march 08 2017</span>
                     </a>
@@ -143,7 +162,7 @@
                 <ul class="hidden-sm hidden-xs">
                     <li class="menu-item-has-children">
                         <a href="index.html"><i class="fa fa-home"></i> Home </a>
-                        <ul class="sub-menu">
+                        <!-- <ul class="sub-menu">
                             <li>
                                 <a href="index.html">Default Style</a>
                             </li>
@@ -154,57 +173,28 @@
                                 <a href="home_white_pinterest.html">White & Pinterest Style </a>
                             </li>
                             <li>
-                                <a href="home_menu_fixed.html">Navigation Fixed Style  </a>
+                                <a href="home_menu_fixed.html">Navigation Fixed Style </a>
                             </li>
                             <li>
-                                <a href="home_custom_font.html">Custom Font Style  </a>
+                                <a href="home_custom_font.html">Custom Font Style </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li class="menu-item-has-children">
                         <a href="category_one.html">
                             Category
                         </a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="category_one.html">Category I</a>
-                            </li>
-                            <li>
-                                <a href="category_two.html">Category II </a>
-                            </li>
-                            <li>
-                                <a href="category_three.html">Category III </a>
-                            </li>
-                        </ul>
+                     
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="single_one_column.html">Single<span></span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="single.html">Single Default</a>
-                            </li>
-                            <li>
-                                <a href="single_one_column.html">Single One Column</a>
-                            </li>
-                            <li>
-                                <a href="single_center.html">Single Center Content</a>
-                            </li>
-                            <li>
-                                <a href="single_center_white.html">Single Center White Style</a>
-                            </li>
-                        </ul>
+                        <a href="single.html">Single<span></span></a>
+
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="gallery.html">Pages<span></span></a>
+                        <a href="#">Pages<span></span></a>
                         <ul class="sub-menu">
                             <li>
                                 <a href="404.html">Page 404</a>
-                            </li>
-                            <li>
-                                <a href="gallery.html">Page Gallery</a>
-                            </li>
-                            <li>
-                                <a href="single_review.html"> Review Panel</a>
                             </li>
                         </ul>
                     </li>
@@ -239,6 +229,8 @@
                             <span class="post-date">
                                 MAR 01, 2017
                             </span>
+                            <em>/</em>
+                                <span class="post-category">By: <a href="#">Muneeb ur rehman</a> </span>
                             <div class="share-posts">
                                 <span>
                                     Share
@@ -247,7 +239,7 @@
                                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <img alt="" src="images/p7.html" />
+                        <img alt="" src="images/p7.jpg" />
 
                         <div class="detail-content">
                             <p>
@@ -256,12 +248,11 @@
                                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
                             </p>
 
-                            <img alt="" src="images/w8.html" />
-                            <p>
+                            <!-- <p>
                                 Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh.
 
                                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
-                            </p>
+                            </p> -->
 
                             <p>
                                 Cras ultricies ligula sed magna dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh.
@@ -269,7 +260,7 @@
                                 Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus.
                             </p>
                             <h2>The captions</h2>
-                            <p>Vivamus suscipit tortor eget felis porttitor volutpat.  Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Nulla quis lorem ut libero malesuada feugiat. Curabitur aliquet quam id dui posuere blandit.</p>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat.  Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
                             <blockquote class="quote-item">
                                 <div class="quote-item-content">
                                     <p> Design is a solution to a problem.<br> Art is a question to a problem</p>
@@ -289,7 +280,7 @@
                             <p>
                                 Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
                             </p>
-                            <h3 class="author-article text-right">- Sue	Benson</h3>
+                            <h3 class="author-article text-right">- Muneeb ur rehman</h3>
                         </div>
                         <div class="social-article">
                             <a href="#" class="facebook">
@@ -304,38 +295,91 @@
                     <div class="box-caption box-caption-small">
                         <h2><span>RELATED POSTS</span></h2>
                     </div>
-                    <div class="three-articles">
-                        <div class="row">
-                            <div class="col-md-4 col-xs-12">
-                                <article class="three-item">
-                                    <div class="ciz-thumb">
-                                        <a href="single.html"><img alt="" src="images/p2.html" /></a>
+                    <div class="grid">
+                        <div class="grid-item">
+                            <article class="post-item-isotop">
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_one.html">Life style</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Mar 01, 2017
+                                    </span>
+                                    <div class="share-posts">
+    
+                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     </div>
-                                    <h5><a href="single.html">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</a></h5>
-
-                                </article>
-
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <article class="three-item">
-                                    <div class="ciz-thumb">
-                                        <a href="single.html"><img alt="" src="images/p3.html" /></a>
+                                </div>
+                                <h2>
+                                    <a href="single.html"> Proin eget tortor risus. ultricies</a>
+                                </h2>
+                                <div class="post-content">
+                                    <p>
+                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                                <a href="single.html" class="post-readmore">Read more</a>
+    
+                            </article>
+                        </div>
+                        <div class="grid-item">
+                            <article class="post-item-isotop">
+                                
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_three.html">Photography</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Mar 01, 2017
+                                    </span>
+                                    <div class="share-posts">
+    
+                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     </div>
-
-                                    <h5><a href="single.html">The ups, downs and future of Tomonobu Itagaki's </a></h5>
-
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <article class="three-item">
-                                    <div class="ciz-thumb">
-                                        <a href="single.html"><img alt="" src="images/p4.html" /></a>
+                                </div>
+                                <h2>
+                                    <a href="single.html">Cras ultricies ligula sed magna</a>
+                                </h2>
+                                <div class="post-content">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    </p>
+                                </div>
+                                <a href="single.html" class="post-readmore">Read more</a>
+    
+                            </article>
+                        </div>
+                        <div class="grid-item">
+                            <article class="post-item-isotop">
+                                
+                                <div class="post-meta">
+                                    <span class="post-category">
+                                        <a href="category_three.html">Photography</a>
+                                    </span>
+                                    <em>/</em>
+                                    <span class="post-date">
+                                        Mar 01, 2017
+                                    </span>
+                                    <div class="share-posts">
+    
+                                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                                     </div>
-
-                                    <h5><a href="single.html">Cras ultricies ligula sed magna dictum porta.</a></h5>
-
-                                </article>
-                            </div>
+                                </div>
+                                <h2>
+                                    <a href="single.html">Donec sollicitudin molestie malesuada.</a>
+                                </h2>
+                                <div class="post-content">
+                                    <p>
+                                        Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                                    </p>
+                                </div>
+                                <a href="single.html" class="post-readmore">Read more</a>
+                            </article>
                         </div>
                     </div>
                     <!--comment-->
@@ -348,7 +392,7 @@
                                 <article class="comment-body">
                                     <footer class="comment-meta">
                                         <div class="comment-author vcard">
-                                            <img alt="" src="images/avatar2.html" class="avatar avatar-32 photo">
+                                            <img alt="" src="images/avatar2.jpg" class="avatar avatar-32 photo">
                                             <b class="fn">John Doe</b> <span class="says">says:</span>
                                         </div>
 
@@ -363,34 +407,12 @@
 
                                     <div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.danhcong.com/themes/teznews/2016/11/11/master-the-art-of-making-great-coffee-with-these-6-tips/?replytocom=43#respond" onclick="return addComment.moveForm( &quot;div-comment-43&quot;, &quot;43&quot;, &quot;respond&quot;, &quot;756&quot; )" aria-label="Reply to SlicerMan">Reply</a></div>
                                 </article>
-                                <ol class="children">
-                                    <li class="comment odd alt depth-2">
-                                        <article class="comment-body">
-                                            <footer class="comment-meta">
-                                                <div class="comment-author vcard">
-                                                    <img alt="" src="images/avatar1.html" class="avatar">
-                                                    <b class="fn">Admin</b> <span class="says">says:</span>
-                                                </div>
-
-                                                <div class="comment-metadata">
-                                                    Mar 01 at 9:35 am
-                                                </div>
-                                            </footer>
-
-                                            <div class="comment-content">
-                                                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Mauris blandit aliquet elit.</p>
-                                            </div>
-
-                                            <div class="reply"><a rel="nofollow" class="comment-reply-link" href="http://www.danhcong.com/themes/teznews/2016/11/11/master-the-art-of-making-great-coffee-with-these-6-tips/?replytocom=44#respond" onclick="return addComment.moveForm( &quot;div-comment-44&quot;, &quot;44&quot;, &quot;respond&quot;, &quot;756&quot; )" aria-label="Reply to SlicerMan">Reply</a></div>
-                                        </article>
-                                    </li>
-                                </ol>
                             </li>
                             <li class="comment">
                                 <article class="comment-body">
                                     <footer class="comment-meta">
                                         <div class="comment-author vcard">
-                                            <img alt="" src="images/avatar.html" class="avatar avatar-32 photo">
+                                            <img alt="" src="images/avatar.jpg" class="avatar avatar-32 photo">
                                             <b class="fn">Tony Baby </b> <span class="says">says:</span>
                                         </div>
                                         <div class="comment-metadata">
@@ -436,57 +458,280 @@
 
                 <!--colright-->
                 <div class="colright">
-                    <!-- dailies-->
-                    <div class="dailies">
-                        <div class="widget-title widget-title-white ">
-                            <span>
-                                DAILIES
-                            </span>
-                        </div>
-                        <div class="dailies-content">
-                            <div class="owl-carousel owl-dailies">
-                                <div>
-                                    <a href="single_center.html">
-                                        <div class="ciz-thumb">
-                                            <img alt="" src="images/w3.html" />
-                                        </div>
-                                    </a>
-                                    <h3>
-                                        <a href="single_center.html">Satisne vobis videor pro meo iure in vestris auribus commentatus</a>
-                                    </h3>
-                                </div>
-                                <div>
-                                    <a href="single_center.html">
-                                        <div class="ciz-thumb">
-                                            <img alt="" src="images/w2.html" />
-                                        </div>
-                                    </a>
-                                    <h3>
-                                        <a href="single_center.html">Nulla quis lorem ut libero malesuada feugiat.</a>
-                                    </h3>
-                                </div>
-                                <div>
-                                    <a href="single_center.html">
-                                        <div class="ciz-thumb">
-                                            <img alt="" src="images/p1.html" />
-                                        </div>
-                                    </a>
-                                    <h3>
-                                        <a href="single_center.html">The ups, downs and future of Tomonobu Itagaki's</a>
-                                    </h3>
-                                </div>
-                                <div>
-                                    <a href="single_center.html">
-                                        <div class="ciz-thumb">
-                                            <img alt="" src="images/w9.html" />
-                                        </div>
-                                    </a>
-                                    <h3>
-                                        <a href="single_center.html">Donec sollicitudin molestie malesuada.d</a>
-                                    </h3>
-                                </div>
+                    <div id="cmsmasters_column_fd2c6c15fa" class="cmsmasters_column one_third">
+                        <div class="cmsmasters_column_inner">
+                            <div id="cmsmasters_heading_2b0ddeb701"
+                                class="cmsmasters_heading_wrap cmsmasters_heading_align_left">
+                                <h2 class="cmsmasters_heading">Latest Articles</h2>
+                            </div>
+                            <div class="cmsmasters_posts_slider post">
+                                <div id="cmsmasters_slider_fa121e6a5f" class="cmsmasters_owl_slider owl-carousel"
+                                    data-items="1" data-single-item="false" data-auto-play="5000" data-pagination="true"
+                                    data-navigation="true">
+                                    <div class="cmsmasters_owl_slider_item">
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-8036"
+                                            class="cmsmasters_slider_post post-8036 post type-post status-publish format-image has-post-thumbnail hentry category-lifestyle category-technology tag-blog tag-lifestyle post_format-post-format-image">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/lifestyle/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_42"
+                                                                rel="category tag">Lifestyle</a>,
+                                                            <a href="category/technology/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_76"
+                                                                rel="category tag">Technology</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/10/how-to-be-as-productive-as-a-google-employee/index.html">How
+                                                                to be as Productive as a
+                                                                Google Employee</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Suspendisse quis orci ut orci
+                                                            pulvinar eleifend. Nulla eu
+                                                            mattis ipsum. Integer eget
+                                                            sagittis nulla praesent et
+                                                            maximus. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
 
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-106"
+                                            class="cmsmasters_slider_post post-106 post type-post status-publish format-standard has-post-thumbnail hentry category-health tag-health tag-lifestyle">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/health/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_45"
+                                                                rel="category tag">Health</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/11/the-most-fascinating-show-the-met-trying-to-fix-itself-2/index.html">The
+                                                                Most Fascinating Show? The
+                                                                Met Trying to Fix Itself</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Etiam eu molestie eros, commodo
+                                                            hendrerit sapien. Nunc pretium
+                                                            tortor felis, eget cursus magna
+                                                            egetnec imperdiet ornare.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
 
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-1965"
+                                            class="cmsmasters_slider_post post-1965 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-main tag-lifestyle">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/lifestyle/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_42"
+                                                                rel="category tag">Lifestyle</a>,
+                                                            <a href="category/main/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_73"
+                                                                rel="category tag">Main</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/13/get-the-best-catering-for-your-summer-wedding-in-philly/index.html">Get
+                                                                the Best Catering for Your
+                                                                Summer Wedding in Philly</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Etiam eu molestie eros, commodo
+                                                            nec turpis hendrerit sapien.
+                                                            Maecenas tempus leo ac nisi
+                                                            iaculis porta. Sed sapien
+                                                            tempus.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-85"
+                                            class="cmsmasters_slider_post post-85 post type-post status-publish format-standard has-post-thumbnail hentry category-sports tag-blog tag-lifestyle tag-sports">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/sports/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_39"
+                                                                rel="category tag">Sports</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/15/liverpool-tops-hoffenheim-in-first-leg-of-champions-playoff/index.html">Liverpool
+                                                                Tops Hoffenheim in First Leg
+                                                                of Champions Playoff</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Maecenas ornare consequat massa
+                                                            ullamcorper dapibus. Aliquam
+                                                            auctor, sapien sit amet sapien.
+                                                            Vivamus laoreet non mauris.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                    </div>
+                                    <div class="cmsmasters_owl_slider_item">
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-87"
+                                            class="cmsmasters_slider_post post-87 post type-post status-publish format-standard has-post-thumbnail hentry category-science tag-culture tag-science">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/science/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_35"
+                                                                rel="category tag">Science</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/18/which-new-york-city-subway-metrocard-to-buy/index.html">Which
+                                                                New York City Subway
+                                                                MetroCard to Buy?</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Duis eleifend nunc sit amet mi
+                                                            dapibus ornare. Suspendisse non
+                                                            tempus vel libero sem
+                                                            pellentesque ornare amet.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-285"
+                                            class="cmsmasters_slider_post post-285 post type-post status-publish format-standard has-post-thumbnail hentry category-arts category-politics tag-economy tag-politics">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/arts/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_18"
+                                                                rel="category tag">Arts</a>,
+                                                            <a href="category/politics/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_32"
+                                                                rel="category tag">Politics</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/23/physiological-responses-to-rock-climbing-in-young-climbers/index.html">Physiological
+                                                                Responses to Rock Climbing
+                                                                in Young Climbers</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Sed nec blandit nibh.
+                                                            Pellentesque commodo suscipit
+                                                            gravida. Sed sit amet ex sed mi
+                                                            dignissim elementum in ut.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-103"
+                                            class="cmsmasters_slider_post post-103 post type-post status-publish format-standard has-post-thumbnail hentry category-economy tag-economy tag-movies tag-newspaper tag-photos">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/economy/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_27"
+                                                                rel="category tag">Economy</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/24/leading-article-a-better-way-to-educate-primary-school-children/index.html">Leading
+                                                                Article: A Better Way to
+                                                                Educate Primary School
+                                                                Children</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Vivamus laoreet non mauris eget
+                                                            mattis. Nam turpis orci,
+                                                            consectetur vel accumsan sed, at
+                                                            sapien. Etiam eu molestie eros.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                        <!-- Start Posts Slider Post Article -->
+                                        <article id="post-2938"
+                                            class="cmsmasters_slider_post post-2938 post type-post status-publish format-standard has-post-thumbnail hentry category-arts tag-blog">
+                                            <div class="cmsmasters_slider_post_outer">
+                                                <div class="cmsmasters_slider_post_inner">
+                                                    <div class="cmsmasters_slider_post_cont_info entry-meta">
+                                                        <span class="cmsmasters_slider_post_category">In
+                                                            <a href="category/arts/index.html"
+                                                                class="cmsmasters_cat_color cmsmasters_cat_18"
+                                                                rel="category tag">Arts</a></span>
+                                                    </div>
+                                                    <header class="cmsmasters_slider_post_header entry-header">
+                                                        <h3 class="cmsmasters_slider_post_title entry-title">
+                                                            <a
+                                                                href="2017/05/28/13-photographers-who-captured-the-epic-beauty-of-americas/index.html">13
+                                                                Photographers Who Captured
+                                                                the Epic Beauty of
+                                                                America’s</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="cmsmasters_slider_post_content entry-content">
+                                                        <p>Nunc ut egestas neque, eu
+                                                            hendrerit lacus. Suspendisse
+                                                            fermentum congue dui nec
+                                                            fringilla. Duis volutpat nunc.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <!-- Finish Posts Slider Post Article -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="cmsmasters_heading_219d7d6dcb"
+                                class="cmsmasters_heading_wrap cmsmasters_heading_align_left cmsmasters_homepage_posts_slider_neg_margin">
+                                <h6 class="cmsmasters_heading"><a href="politics/index.html">View More posts</a></h6>
                             </div>
                         </div>
                     </div>
@@ -499,11 +744,6 @@
                         </div>
                         <div class="list-popular">
                             <article class="popular-item">
-                                <div class="ciz-thumb">
-                                    <a href="single_center.html">
-                                        <img alt="" src="images/w1.html">
-                                    </a>
-                                </div>
                                 <div class="post-meta">
                                     <span class="post-category">
                                         <a href="category_two.html">WORLD</a>
@@ -517,11 +757,7 @@
 
                             </article>
                             <article class="popular-item">
-                                <div class="ciz-thumb">
-                                    <a href="single_center.html">
-                                        <img alt="" src="images/l1.html">
-                                    </a>
-                                </div>
+
                                 <div class="post-meta">
                                     <span class="post-category">
                                         <a href="category_one.html">LIFE STYLE</a>
@@ -535,11 +771,7 @@
 
                             </article>
                             <article class="popular-item">
-                                <div class="ciz-thumb">
-                                    <a href="single_center.html">
-                                        <img alt="" src="images/p3.html">
-                                    </a>
-                                </div>
+
                                 <div class="post-meta">
                                     <span class="post-category">
                                         <a href="category_three.html">PHOTOGRAPHY </a>
@@ -553,11 +785,7 @@
 
                             </article>
                             <article class="popular-item">
-                                <div class="ciz-thumb">
-                                    <a href="single_center.html">
-                                        <img alt="" src="images/p2.html">
-                                    </a>
-                                </div>
+
                                 <div class="post-meta">
                                     <span class="post-category">
                                         <a href="category_three.html">PHOTOGRAPHY</a>
@@ -567,15 +795,12 @@
                                         Feb 10, 2015
                                     </span>
                                 </div>
-                                <h5><a href="single_center.html">The ups, downs and future of Tomonobu Itagaki's</a></h5>
+                                <h5><a href="single_center.html">The ups, downs and future of Tomonobu Itagaki's</a>
+                                </h5>
 
                             </article>
                             <article class="popular-item">
-                                <div class="ciz-thumb">
-                                    <a href="single_center.html">
-                                        <img alt="" src="images/w7.html">
-                                    </a>
-                                </div>
+
                                 <div class="post-meta">
                                     <span class="post-category">
                                         <a href="category_two.html">WORLD</a>
@@ -633,76 +858,12 @@
                         <input type="text" placeholder="Your email address..." />
                         <button class="my-btn">Subscribe</button>
                     </div>
-                    <!-- trend post-->
-                    <div class="trend-box">
-                        <div class="widget-title">
-                            <span>
-                                TREND
-                            </span>
-                        </div>
-                        <article class="trend-one">
-                            <span class="number">01</span>
-                            <div class="ciz-thumb">
-                                <a href="single_center_white.html">
-                                    <img alt="" src="images/w2.html">
-                                </a>
-                            </div>
-
-                            <h5><a href="single_center_white.html">Donec sollicitudin molestie malesuada.d</a></h5>
-
-                        </article>
-                        <ul class="list-trend">
-
-                            <li class="trend-item">
-                                <span class="number">
-                                    <img alt="" src="images/l1.html" />
-                                    02
-                                </span>
-
-
-                                <h5><a href="single_center_white.html">Nulla quis lorem ut libero malesuada feugiat.</a></h5>
-
-                            </li>
-                            <li class="trend-item">
-
-                                <span class="number">
-                                    <img alt="" src="images/w8.html" />
-                                    03
-                                </span>
-                                <h5><a href="single_center_white.html">Cras ultricies ligula sed magna dictum porta.</a></h5>
-
-                            </li>
-                            <li class="trend-item">
-
-                                <span class="number">
-                                    <img alt="" src="images/p4.html" />
-                                    04
-                                </span>
-                                <h5>
-                                    <a href="single_center_white.html">
-                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                    </a>
-                                </h5>
-
-                            </li>
-                            <li class="trend-item">
-
-                                <span class="number">
-                                    <img alt="" src="images/p3.html" />
-                                    05
-                                </span>
-                                <h5><a href="single_center_white.html">The ups, downs and future of Tomonobu Itagaki's Devil's Third</a></h5>
-
-                            </li>
-
-                        </ul>
-                    </div>
                     <!-- advertisement-->
-                    <div class="ads hidden-sm hidden-xs ">
+                    <div class="ads hidden-sm hidden-xs  ">
                         <p>advertisement</p>
-                        <img alt="" src="images/ads.html" class="img-responsive" />
+                        <img alt="" src="images/ads.jpg" class="img-responsive" />
                     </div>
-                </div>
+                </div> 
                 <div class="clearfix"></div>
             </div>
 
@@ -712,7 +873,7 @@
                     <div class="footer-col footer-col-left">
                         <div class="about">
                             <a href="index.html" class="logo">
-                                <img alt="" src="images/logo.html" />
+                                <img alt="" src="images/logo-bottom-sidebar.png" />
                             </a>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</p>
                             <ul class="list-social-icon-footer">
@@ -763,32 +924,32 @@
                         <ul class="instagram-pics">
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i1.html" />
+                                    <img alt="" src="images/i1.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i2.html" />
+                                    <img alt="" src="images/i2.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i3.html" />
+                                    <img alt="" src="images/i3.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i4.html" />
+                                    <img alt="" src="images/i4.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i5.html" />
+                                    <img alt="" src="images/i5.jpg" />
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img alt="" src="images/i6.html" />
+                                    <img alt="" src="images/i6.jpg" />
                                 </a>
                             </li>
                             <li class="clearfix"></li>
@@ -802,7 +963,7 @@
                     <span class="totop">
                         To <br /> top
                     </span>
-                    <p> © 2017 <a href="#">CIZ NEWS</a>. All rights reserved.</p>
+                    <p> © 2023 <a href="#">Bitbuilteni</a>. All rights reserved.</p>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
@@ -817,9 +978,16 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.bxslider.js"></script>
+    <!-- <script src="js/jquery.bxslider.js"></script> -->
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        // In your Javascript (external .js resource or <script> tag)
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
 </body>
 
 <!-- Mirrored from www.cizthemes.com/template/ciznews/single.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Jul 2023 17:29:05 GMT -->
